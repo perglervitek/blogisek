@@ -1,26 +1,23 @@
 <template>
-  <v-app>
-    <navigation></navigation>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <v-spacer></v-spacer>
 
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+      <v-btn
+        to="/test">
+        <span class="mr-2">Latest Release</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-import Navigation from './components/Navigation';
-
 export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-    Navigation,
-  },
-
- data(){
+  name: "navigation",
+  data(){
     return {
       appTitle: 'Awesome App',
       sidebar: false,
