@@ -3,32 +3,24 @@
     <navigation></navigation>
 
     <v-main>
-      <HelloWorld/>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 import Navigation from './components/Navigation';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
     Navigation,
   },
 
  data(){
     return {
-      appTitle: 'Awesome App',
-      sidebar: false,
-      menuItems: [
-          { title: 'Home', path: '/home', icon: 'home' },
-          { title: 'Sign Up', path: '/signup', icon: 'face' },
-          { title: 'Sign In', path: '/signin', icon: 'lock_open' }
-     ]
+      
     }
   },
 };
