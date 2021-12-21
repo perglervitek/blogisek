@@ -3,7 +3,9 @@
     <navigation></navigation>
 
     <v-main>
-      <router-view></router-view>
+      <v-container>
+        <router-view></router-view>
+      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -13,15 +15,8 @@ import Navigation from './components/Navigation';
 
 export default {
   name: 'App',
-
   components: {
     Navigation,
-  },
-
- data(){
-    return {
-      
-    }
-  },
+  }
 };
 </script>
